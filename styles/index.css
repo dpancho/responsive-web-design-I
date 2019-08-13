@@ -99,7 +99,6 @@ a:hover{
 	display: flex;
 	align-items: baseline;
 	justify-content: space-between;
-	/*background:green;*/
 }
 
 /***** Header *****/
@@ -254,8 +253,113 @@ h3{
 		flex-direction: column;
 		justify-content: center;
 	}
-	
 
+	.middle-img img{
+		width: 100%;
+	}
+	
+	.middle-img{
+		height: auto;
+		margin: 5% auto;
+	}
+
+}
+
+/***PHONE***/
+@media screen and (max-width: 500px){
+	body{
+		margin: 0;
+	}
+
+	.navbar{
+		display: flex;
+		height: auto;
+		margin: auto;
+	}
+	
+	.anchors{
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
+		margin: 0;
+	}
+	
+	a{
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		border-bottom: 1px solid gray;
+		padding: 1.2vh 0;
+	}
+
+	a:nth-of-type(1){
+		border-top: 1px solid gray;
+	}
+
+	a:hover{
+		background: lightblue;
+		color: black;
+	}
+	
+	.logo{
+		margin: 1vh;
+	}
+
+	header{
+		border-bottom: 0;
+	}
+
+	header, .top-content, .middle-img, .bottom-content, .contact{
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.top-content, .bottom-content{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.top-content .about{
+		padding: 0;
+	}
+
+	.top-content{
+		border-top: 2px solid black;
+		padding-bottom: 10px;
+	}
+
+	.bottom-content{
+		padding-top: 0;
+	}
+
+	.middle-img img{
+		width: 100%;
+	}
+
+	.middle-img{
+		height: auto;
+		margin: 5% auto;
+	}
+
+	.features, .about, .services, .product, .vision{
+		width:100%;
+	}
+
+	button{
+		width: 150px;
+		height: 30px;
+		margin: 20px auto;
+	}
+
+	h3{
+		padding-top: 5%;
+		font-size: 1.2em;
+	}
 }
 
 /*****************  Services page  *****************/
